@@ -1,0 +1,187 @@
+body{
+	background-color: #001f24;
+	color: #fff;
+	font-family: 'Otomanopee One', sans-serif;
+}
+.container1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nom {
+	background-color: #001f24;
+	border-radius: 10px;
+	text-align: center;
+	width: 150px;
+}
+
+/*  ICNONES */
+a{
+	color: black;
+	
+}
+
+.icone i{
+	display: block;
+	margin-top: 5px;
+}
+
+/* PHOTO*/
+
+.card {
+	height: 379px;
+	width: 300px;
+	border-radius: 10px;
+	transition: all 0.8s;
+	overflow: hidden;
+	background: black;
+	box-shadow: 0 70px 63px -60px #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card0 {
+	background: url(photo.jpg);
+	background-size: 300px;
+}
+.card0:hover {
+	background: url(photo.jpg);
+	background-size: 450px;
+}
+
+/* BORDURE DE LA PHOTO*/
+.border{
+	height: 369px;
+	width: 290px;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.border:hover {
+	border: 1px solid blue;
+}
+
+/*.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}*/
+
+/*Apparition de h2 au survole*/
+.card h2 {
+	font-family: Arial, sans-serif;
+	color: white;
+	margin: 20px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.card:hover h2 {
+	opacity: 1;
+}
+
+
+
+
+.container1 .presentation{
+	width: 50%;
+	margin-left: 50px;
+}
+
+.container2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.competence {
+	width: 40%;
+}
+
+.liste {
+	width: 35%;
+	margin-right: 50px;
+}
+
+/* fieldset*/
+fieldset{
+	si
+} 
+
+
+
+
+
+
+/* syle des comptetence*/
+ol {
+	width: 300px;
+	list-style: none;
+}
+
+ol li {
+	font-size: 1.2rem;
+	font-color: white;
+	padding: 20px 30px;
+	margin: 10px 0;
+	background: rgb(23,23,23);
+	z-index: 5;
+	position: relative;
+	cursor: pointer;
+	transition: all .4s; 
+}
+
+ol li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	z-index: -1;
+	transition: all .4s;
+}
+
+ol li:nth-child(1):hover::before {
+	content: "85%";
+	text-align: right;
+	width: 85%;
+}
+
+ol li:nth-child(1)::before{
+
+	background: #fd7231;
+}
+
+ol li:nth-child(2):hover::before {
+	content: "75%";
+	text-align: right;
+	width: 75%;
+}
+ol li:nth-child(2)::before{
+	background: #318afd;
+}
+
+ol li:nth-child(3):hover::before {
+	content: "60%";
+	text-align: right;
+	width: 60%;
+}
+ol li:nth-child(3)::before{
+	background: #8050cb;
+}
+
+ol li:nth-child(4):hover::before {
+	content: "68%";
+	text-align: right;
+	width: 68%;
+}
+ol li:nth-child(4)::before{
+	background: #fbf80e;
+}
+
+
+ol li:hover {
+	transform: translateX(20px);
+
+}

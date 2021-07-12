@@ -1,0 +1,282 @@
+/*about-me*/
+.me{
+	color: white;
+	text-align: center;
+	margin-top: 25px;
+	font-family: AR DELANEY;
+}
+p {
+	color: white;
+	padding-left: 500px;
+	padding-top: 50px;
+	height: 50px;
+	width: 500px;
+
+
+}
+
+/* styles de l'image*/
+/*sytle cartes*/
+.card {
+	height: 379px;
+	width: 300px;
+	border-radius: 10px;
+	transition: all 0.8s;
+	overflow: hidden;
+	background: black;
+	box-shadow: 0 70px 63px -60px #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+/*cadre blanc au survol*/
+.border{
+	height: 369px;
+	width: 290px;
+	border-radius: 10px;
+	transition: all 1s;
+	position: relative;
+}
+
+.border:hover {
+	border: 1px solid white;
+}
+
+/*Style des icone*/
+.fb{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 50px;
+	justify-content: space-around;
+	width: 50px;
+	top: 190px;
+}
+a{
+	color: black;
+}
+#insta {
+	top: 240px;
+}
+
+/*PHOTO*/
+.card0 {
+	background: url(photo.jpg);
+	background-size: 300px;
+}
+.card0:hover {
+	background: url(photo.jpg);
+	background-size: 450px;
+}
+
+/*style du titre ou h2 */
+.card h2 {
+	font-family: Arial, sans-serif;
+	color: white;
+	margin: 20px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+/*Apparition de h2 au survole*/
+.card h2 {
+	font-family: Arial, sans-serif;
+	color: white;
+	margin: 20px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.card:hover h2 {
+	opacity: 1;
+}
+
+/* Presentation*/
+.card p {
+	font-family: Arial, sans-serif;
+	color: black;
+	/*margin: 20px;*/
+	opacity: 0;
+	transition: all 1s;
+}
+.card p {
+	font-family: Arial, sans-serif;
+	color: black;
+	margin-left: 500px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+
+.card:hover p {
+	opacity: 1;
+	color: white;
+}
+
+
+
+
+
+#liste {
+	color: white;
+}
+h2 {
+	background-color: blue;
+	background-size: 100px;
+	border-radius: 10px;
+	font-family: Elephant;
+}
+
+fieldset {
+	height: 100%;
+	width: 500px;
+}
+
+body {
+	background-color: black;
+
+}
+
+.nom {
+	text-align: center;
+}
+
+
+ol {
+	width: 300px;
+	list-style: none;
+}
+
+ol li {
+	font-size: 1.2rem;
+	font-color: white;
+	padding: 20px 30px;
+	margin: 10px 0;
+	background: rgb(23,23,23);
+	z-index: 5;
+	position: relative;
+	cursor: pointer;
+	transition: all .4s; 
+}
+
+ol li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	z-index: -1;
+	transition: all .4s;
+}
+
+ol li:nth-child(1):hover::before {
+	width: 85%;
+}
+
+ol li:nth-child(1)::before{
+	background: #4285f4;
+}
+
+ol li:nth-child(2):hover::before {
+	width: 75%;
+}
+ol li:nth-child(2)::before{
+	background: #d00000;
+}
+
+ol li:nth-child(3):hover::before {
+	width: 60%;
+}
+ol li:nth-child(3)::before{
+	background: #09601f;
+}
+
+ol li:nth-child(4):hover::before {
+	width: 68%;
+}
+ol li:nth-child(4)::before{
+	background: #0c0960;
+}
+
+
+ol li:hover {
+	transform: translateX(20px);
+
+}
+
+
+/*boutton neon
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	position: relative;
+	padding: 25px 30px;
+	margin: 40px 0; color: blue;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 05s; letter-spacing: 4px;
+	overflow: hidden; margin-right: 50px;
+}
+a:hover{
+	background: #03e9f4; color: #05081;
+}
+a span{
+	position: absolute;
+	display: block;
+}
+
+a span:nth-child(1){
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%,100%{
+		left: 100%;
+	}
+}
+
+a span:nth-child(2){
+	top: -100%; right: 0;
+	width: 2px; height: 100%;
+	background: linear-gradient(180deg,transparent,#03e9f4);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%,100%{
+		top: 100%;
+	}
+}
+
+a span:nth-child(2){
+	bottom: -100%; right: 0;
+	width: 100px; height: 2px;
+	background: linear-gradient(270deg,transparent,#03e9f4);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.50s;
+}
+@keyframes animate3{
+	0%{
+		top: -100%;
+	}
+	50%,100%{
+		right: 100%;
+	}
+}
